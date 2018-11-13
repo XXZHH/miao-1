@@ -8,31 +8,30 @@
       /* YOUR STYLE GOES HERE */
       /* 不得改变页面的任何html结构 */
 
-      body > p:first-of-type {
+    body > p:first-of-type {
         color:red;
 }
-
+  
+    body > p:first-of-type + p:focus {
+      color:blue;
+  }
     body > p:first-of-type + p:hover {
       color:red;
 }
 
-    body > p:first-of-type + P:active {
+    body > p:first-of-type + p:active {
       color:green;
 }
 
-    body > p:first-of-type + P:focus {
-      color:blue;
-}
-
-    p.a.c > span {
+    .a.c > span {
       color: red;
 }
 
-    p.a.c > span > span {
+   .a.c > span > span {
       color: green;
 } 
 
-    p.a.c > span > span + span {
+    .a.c > span > span + span {
       color: blue;
 }
 
@@ -44,51 +43,52 @@
       color: pink;
 }
 
-    div a[href^=mail] {
+    div a[href^="mail"] {
       color: blue;
 }
 
-    div a[href^=tel] {
+    div a[href^="tel"] {
       color: yellow;
 }
 
-    div a[href$=pdf i] {
+    div a[href$="pdf" i] {
       font-size: 30px; 
+      color: black;
 }
 
     .a ul li:nth-child(n+4):nth-child(-n+7) {
       color: red;
 }
 
-    body .b > p + p + p + ul li:nth-child(-n+25){
+   .b > p + p + p + ul li:nth-child(-n+25){
       color: red
 }
 
-    body .b > p + p + p + ul li:nth-child(n+65) {
+    .b > p + p + p + ul li:nth-child(n+65) {
       color: green;
 }
 
-    body .b > p + p + p + ul li:nth-child(n+35):nth-child(-n+50) {
+    .b > p + p + p + ul li:nth-child(n+35):nth-child(-n+50) {
       color: blue;
 }
 
-    body .b > p:first-of-type + ul li:first-of-type {
+    .b > p:first-of-type + ul li:first-of-type {
       color: red;
 }
 
-    body .b > p:first-of-type + ul li:nth-child(2n+4) {
+     .b > p:first-child + ul li:nth-child(2n+4) {
       color: pink;
 }
 
-    body .b > p:first-of-type + ul li:nth-child(3n+6) {
+    .b > p:first-of-type + ul li:nth-child(3n+6) {
       color: pink;
 }
 
-    body .b > p:first-of-type + ul li:nth-child(5n+10) {
+   .b > p:first-of-type + ul li:nth-child(5n+10) {
       color: pink;
 }
 
-    body .b > p:first-of-type + ul li:nth-child(7n+14) {
+    .b > p:first-of-type + ul li:nth-child(7n+14) {
       color: pink;
 }   
 
