@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>css-block-layout</title>
+</head>
+<style>
+  .title {
+  background: black;
+  margin-top: -8px;
+}
+
+.title p {
+  color: white;
+  width: 600px;
+  margin: auto;
+  font-size: 16px;
+}
+
+.main p {
+  width: 600px;
+  margin: auto;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+.table {
+  width: 600px;
+  margin: auto;
+  padding: 0px;
+}
+
+.table li {
+  list-style: none;
+  border: 3px solid;
+  width: 180px;
+  height: 40px;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+  background: pink;
+  text-align: center;
+  line-height: 34px;
+}
+
+.table li:nth-child(n+5) {
+  margin-left: 210px;
+}
+.table li:nth-child(n+9) {
+  margin-left: 420px;
+}
+
+.table li:nth-child(4n+5) {
+  margin-top: -220px;
+}
+
+.table li:hover {
+  background: red;
+}
+
+.lb {
+  width: 600px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0px;
+  margin-bottom: 13px;
+}
+
+.lb li {
+  border-left: opx;
+  border-bottom: 1px dotted;
+  margin-bottom: -1px;
+  list-style: none;
+}
+
+.footer {
+  background: #EE82EE;
+  text-align: center;
+}
+
+.footer p {
+  width: 600px;
+  margin: auto;
+  
+}
+</style>
+
+<body>
+<div class="title">
+  <p>hello world 请调整浏览器窗口大小查看效果</p>
+</div>
+<div class="main">
+    <p>页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px </p>
+</div>
+<ul class="table">
+  <li>宽180高40(包含边框)</li>
+  <li>水平间隙30px</li>
+  <li>垂直间隙15px</li>
+  <li>边框宽度3px</li>
+  <li>产品</li>
+  <li>产品</li>
+  <li>产品</li>
+  <li>产品</li>
+  <li>产品</li>
+  <li>产品</li>
+  <li>产品</li>
+  <li>产品</li>
+</ul>
+ <ul class="lb">
+   <li>link</li>
+   <li>link</li>
+   <li>link</li>
+   <li>link</li>
+   <li>link</li>
+ </ul>
+  <div class="footer">
+    <p>&copy;版权所有<p>
+    <p>本页所有布局均使用块级元素</p>
+  </div>
+</body>
+</html>
+</body>
+</html>
