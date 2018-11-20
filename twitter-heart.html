@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>twitter-heart.html</title>
+  <style>
+  	body {
+	margin-top: 200px;
+	margin-left: 200px;
+	position: relative;
+}
+.like {
+	background-image: url(https://abs.twimg.com/a/1542244373/img/animations/web_heart_animation_edge.png);
+	height: 100px;
+	width: 100px;
+	position: relative;
+	/* background-repeat: no-repeat; */ 
+}
+
+.like:focus {
+	transition: 2s steps(28);
+	background-position: -2800px 0;
+	z-index: -3;
+	outline: none;
+}
+section {
+	width: 50px;
+	height: 25px;
+	background: black;
+	text-align: center;
+	position: absolute;
+	top: 0px;
+	left: 25px;
+	color: white;
+	font-weight: bold;
+}
+.triangle {
+	width: 0px;
+	height: 0px;
+	border: 5px solid;
+	border-color: black transparent transparent;
+	position: absolute;
+	top: 25px;
+	left: 40px;
+}
+
+  </style>
+</head>
+<body>
+<div class="like" tabindex="-1"></div>
+	<div class="icon">
+		<section>喜欢</section>
+	<div class="triangle"></div>
+	</div>
+</body>
+</html>

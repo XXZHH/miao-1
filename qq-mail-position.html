@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>qq-mail-position</title>
+  <style>
+  * {
+	height: 100%;
+	margin: 0px;
+	width: 100%;
+	box-sizing: inherit;
+	font-size: 26px;
+	color: white;
+}
+
+header {
+	height: 80px;
+	background: grey;
+	box-sizing: border-box;
+	border-bottom: 3px red solid;
+}
+
+aside {
+	position: fixed;
+	height: calc(100% - 80px);
+	background: tan;
+	width: 80px;
+	top: 80px;
+}
+
+main {
+	position: fixed;
+	width: calc(100% - 80px);
+	height: calc(100% - 80px);
+	background: black;
+	left: 80px;
+	box-sizing: border-box;
+	border-left: 3px red solid;
+}
+  </style>
+</head>
+<body>
+	<header>header</header>
+	<aside>aside</aside>
+	<main>main</main>
+</body>
+</html>
