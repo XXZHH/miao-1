@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>radio-slider.html</title>
+  <style>
+div {
+	width: 990px;
+  margin-left: auto;
+	margin-right: auto;
+	box-sizing: border-box;
+	position: relative;
+	font-size: 0px;
+}
+img {
+	width: 990px;
+	height: 460px;
+	display: none;
+}
+input {
+	display: none;
+}
+label {
+	height: 10px;
+	width: 10px;
+	box-sizing: border-box;
+	display: inline-block;
+  border-radius: 50%;
+	background: #8E9095;
+	border: 2px solid;
+	border-color: #B1B3B7;
+	margin-left: 5px;
+}
+label:hover {
+	background: white;
+}
+label:focus {
+	background: white;
+}
+input:checked + img {
+	display: block;
+}
+input:checked +img + label {
+	background: white;
+}
+
+label {
+	position: absolute;
+	top: 430px;
+}
+.a {
+	right: 115px;
+}
+.b {
+	right: 95px;
+}
+.c {
+	right: 75px;
+}
+.d {
+	right: 55px;
+}
+.e {
+	right: 35px;
+}
+  </style>
+</head>
+<body>
+		<div>
+			<input  id="pic1" type="radio" name="pic">
+			<img src="https://i1.mifile.cn/a4/xmad_15427624932575_mcJkj.jpg" alt="电视">
+			<label class="a" for="pic1"></label>
+			<input id="pic2" type="radio" name="pic" >
+			<img src="https://i1.mifile.cn/a4/xmad_1542593050318_TVIrS.jpg" alt="欢迎回家">
+			<label class="b" for="pic2"></label>
+			<input id="pic3" type="radio" name="pic">
+			<img src="https://i1.mifile.cn/a4/xmad_15427030629034_vRria.jpg" alt="mi mix3">
+			<label class="c" for="pic3"></label>
+			<input id="pic4" type="radio" name="pic">
+			<img src="https://i1.mifile.cn/a4/xmad_1542718183295_gZCXT.jpg" alt="秒杀">
+			<label class="d" for="pic4"></label>
+			<input  id="pic5" type="radio" name="pic" checked>
+			<img src="https://i1.mifile.cn/a4/xmad_15427183282728_fjeaN.jpg" alt="笔记本">		
+			<label class="e" for="pic5"></label>
+	 </div>
+	
+</body>
+</html>
+
+	
+</body>
+</html>

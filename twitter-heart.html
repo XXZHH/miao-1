@@ -10,18 +10,18 @@
 	margin-left: 200px;
 	position: relative;
 }
-.like {
+label {
 	background-image: url(https://abs.twimg.com/a/1542244373/img/animations/web_heart_animation_edge.png);
 	height: 100px;
 	width: 100px;
 	position: relative;
-	/* background-repeat: no-repeat; */ 
+	background-repeat: no-repeat;  
+	display: inline-block;
 }
 
-.like:focus {
+input:checked + label {
 	transition: 2s steps(28);
 	background-position: -2800px 0;
-	z-index: -3;
 	outline: none;
 }
 section {
@@ -48,7 +48,10 @@ section {
   </style>
 </head>
 <body>
-<div class="like" tabindex="-1"></div>
+	<div>
+		<input  hidden="hidden"  type="checkbox" id="heart">
+		<label for="heart"></label>
+	</div>
 	<div class="icon">
 		<section>喜欢</section>
 	<div class="triangle"></div>

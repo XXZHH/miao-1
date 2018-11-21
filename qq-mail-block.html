@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>qq-mail-block</title>
+	<style>
+		* {
+			height: 100%;
+			box-sizing: inherit;
+			margin: 0px; 
+		}
+
+		header {
+			height: 20%;
+			box-sizing: border-box;
+			border-bottom: 1px solid black;
+			background: pink;
+		}
+
+		div {
+			height: 80%;//子元素的高度相加等于父元素之和，但可以超出父元素就有了滚动条。
+			box-sizing: border-box;
+			background: blue;
+			width: 100%;
+		}
+
+		aside {
+			width: 25%;
+			border-right: 1px solid black;
+			background: grey;
+		}
+
+		main {
+			margin-left: 25%;
+			margin-top:  -80vh;
+			background: red;
+		}
+	</style>
+</head>
+<body>
+<header></header>
+<div>
+	<aside></aside>
+	<main></main>
+</div>
+</body>
+</html>

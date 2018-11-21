@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>ios-checkbox</title>
+  <style>
+  	* {
+	/* background:rgb(0,0,0,0.08) */
+}
+label {
+	display: inline-block;
+	background: white;
+	height: 100px;
+	width: 100px;
+	box-sizing: border-box;
+	border-radius: 50%;
+	position: absolute;
+	left: 13px;
+	top: 13px;
+	transition: 1s;
+}
+
+section {
+	width: 240px;
+	height: 110px;
+	box-sizing: border-box;
+	border-radius: 150px 150px;
+	/* position: relative; */
+	background: #DDD;
+	transition: 1s;
+}
+
+input:checked + label {
+	transition-timing-function: cubic-bezier(.11,-0.41,1,1.42);
+	margin-left: 125px;
+	outline: none;
+}
+
+input:checked + label + section {
+	transition-timing-function: 1s;
+	background: #6EDD5E;
+}
+  </style>
+</head>
+<body>
+	
+	<div>
+		<input hidden type="checkbox" id="a">
+		<label  class="round" for="a"></label>
+		<section></section>
+	</div>
+</body>
+</html>
