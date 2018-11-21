@@ -16,7 +16,10 @@ div {
 img {
 	width: 990px;
 	height: 460px;
-	display: none;
+	/* display: none; */
+	position: absolute;
+	transition: 1s;
+	opacity: 0;
 }
 input {
 	display: none;
@@ -40,6 +43,8 @@ label:focus {
 }
 input:checked + img {
 	display: block;
+	transition: 1s;
+	opacity: 1;
 }
 input:checked +img + label {
 	background: white;
@@ -48,6 +53,7 @@ input:checked +img + label {
 label {
 	position: absolute;
 	top: 430px;
+	z-index: 1;
 }
 .a {
 	right: 115px;
