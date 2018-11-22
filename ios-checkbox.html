@@ -5,50 +5,51 @@
   <meta name="viewport" content="width=device-width">
   <title>ios-checkbox</title>
   <style>
-  	* {
-	/* background:rgb(0,0,0,0.08) */
-}
-label {
-	display: inline-block;
-	background: white;
-	height: 100px;
-	width: 100px;
-	box-sizing: border-box;
-	border-radius: 50%;
-	position: absolute;
-	left: 13px;
-	top: 13px;
-	transition: 1s;
-}
-
-section {
-	width: 240px;
-	height: 110px;
-	box-sizing: border-box;
-	border-radius: 150px 150px;
-	/* position: relative; */
-	background: #DDD;
-	transition: 1s;
-}
-
-input:checked + label {
-	transition-timing-function: cubic-bezier(.11,-0.41,1,1.42);
-	margin-left: 125px;
-	outline: none;
-}
-
-input:checked + label + section {
-	transition-timing-function: 1s;
-	background: #6EDD5E;
-}
+	input {
+		display: none;
+	}
+	label {
+		height: 100px;
+		width: 200px;
+		background: #ddd;
+		display: inline-block;
+		position: relative;
+		border-radius: 100px;
+		transition: box-shadow .5s;
+		box-shadow:inset 0 0 0px #6edd5e;
+	}
+	span {
+		height: 92px;
+		width: 100px;
+		border-radius: 50%;
+		box-sizing: border-box;
+		background: white;
+		display: inline-block;
+		position: absolute;
+		left: 0px;
+		transition: left .5s;
+		margin: 3px;
+	}
+	input:checked + label > span{
+		left: 100px;
+	}
+	input:checked + label {
+		box-shadow: inset 0 0 0px 50px #6edd5e;
+	}
+	div {
+		height: 500px;
+		width: 500px;
+		margin: auto;
+		margin-top: 300px;
+	}
   </style>
 </head>
 <body>
-	
 	<div>
-		<input hidden type="checkbox" id="a">
-		<label  class="round" for="a"></label>
-		<section></section>
+		<input type="checkbox" id="apple">
+		<label for="apple">
+			<span></span>
+		</label>
 	</div>
 </body>
 </html>

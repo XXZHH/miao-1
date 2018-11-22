@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>级联菜单</title>
+  <style>
+  	* { 
+	margin: 0px;
+	padding: 0px;
+}
+
+header {
+	height: 45px;
+	background: #36373a;
+}
+ul {
+	list-style: none;
+	padding: 0px;
+	display: inline-block;
+}
+.a {
+	position: relative;
+	height: 75px;;
+	width: 100%;
+	text-align: center;
+	background: white;
+	padding: 0px;
+	top: 0px;
+}
+.a > li{
+ 	display: inline-block;
+	position: relative;
+	font-size: 24px;
+	color: black;
+	line-height: 75px;
+	background: none;
+	margin-left: 15px;
+}
+ul li {
+	position: relative;
+	white-space: nowrap;
+}
+ul ul {
+	position: absolute;
+	top: 100%;
+	left: 0%;
+
+}
+ul ul > li{
+	padding-right: 30px;
+}
+ul ul li {
+	display: none;
+}
+ul ul ul {
+	position: absolute;
+	left: 100%;
+	top: 0;
+}
+
+li:hover>ul>li {
+	display: block;
+}
+
+ul ul ul:before {
+	content: '>';
+	font-size: 24px;
+	position: absolute;
+	right: 100%;
+}
+
+  </style>
+</head>
+<body>
+	<header></header>
+	<div>
+		<ul class="a">
+			<li>首页
+				<ul class="b">
+					<li>手机
+						<ul class="c">
+							<li>坚果R系列
+								<ul>
+									<li>坚果R1</li>
+									
+								</ul>
+							</li>
+							<li>坚果U系列
+								<ul>
+									<li>坚果Pro2S</li>
+									<li>坚果Pro2</li>
+									<li>坚果3</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li>官方配件
+						<ul class="c">
+							<li>保护套</li>
+							<li>耳机</li>
+							<li>数据线</li>
+							<li>音箱</li>
+							<li>移动电源</li>
+						</ul>
+					</li>
+					<li>服饰箱包
+						<ul class="c">
+							<li>服饰</li>
+							<li>鞋</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li>手机
+					<ul class="b">
+						<li>坚果R1</li>
+						<li>坚果Pro2S</li>
+						<li>坚果Pro2</li>
+						<li>坚果3</li>
+					</ul>
+			</li>
+			<li>“足迹”系列
+				<ul>
+					<li>坚果Pro系列</li>
+					<li>坚果U系列</li>
+				</ul>
+			</li>
+			<li>官方配件
+				<ul class="b">
+					<li>保护套
+						<ul>
+							<li>坚果Pro系列保护套</li>
+							<li>坚果系列保护套</li>
+						</ul>
+					<li>耳机
+						<ul>
+							<li>线控耳机</li>
+							<li>蓝牙耳机</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li>畅呼吸系列
+				<ul class="b">
+					<li>畅呼吸加湿器</li>
+					<li>畅呼吸空气净化器</li>
+				</ul>
+			</li>
+			<li>箱包类
+				<ul class="b">
+					<li>地平线</li>
+				</ul>
+			</li>
+			<li>品牌周边
+				<ul class="b">
+					<li>服饰</li>
+					<li>家居生活</li>
+					<li>文具</li>
+					<li>图书</li>
+				</ul>
+			</li>
+			<li>智能音箱
+				<ul class="b">
+					<li>大卫和希瑞</li>
+				</ul>
+			</li>
+		</ul>
+		
+	</div>
+</body>
+</html>
