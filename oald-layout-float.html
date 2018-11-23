@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>oald-layout-float</title>
+</head>
+<style>
+	html,
+	body {
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	}
+	aside {
+		height: 100%;
+		width: 80px;
+		background: pink;
+	}
+	.left {
+		float: left;
+	}
+	.right {
+		float: right;
+		box-sizing: border-box;
+		border-left: 3px solid;
+	}
+	section {
+		width: 120px;
+		height: 100%;
+		background: aqua;
+		float: right;
+	}
+	div {
+		height: 100%;
+		display: flow-root;
+		box-sizing: border-box;
+		border-left: 3px solid;
+		border-right: 3px solid;
+	}
+	header {
+		height: 80px;
+		background: yellow;
+		border-bottom: 3px solid;
+		box-sizing: border-box;
+	}
+	main {
+		height: calc(100% - 80px);
+		background: grey;
+	}
+	
+	
+</style>
+<body>
+	<aside class="left"></aside>
+	<aside class="right"></aside>
+	<section></section>
+	<div>
+		<header></header>
+		<main></main>
+	</div>
+</body>
+</html>
