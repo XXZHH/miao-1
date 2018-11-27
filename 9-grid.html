@@ -6,24 +6,20 @@
   <title>9-grid</title>
 </head>
 <style>
-	div {
-		width: 300px;
-		margin: auto;
-		margin-top: 300px;
-	}
-	ul {
-	list-style: none;
+	/*浮动*/
+	.fd {
+		list-style: none;
 		width: 170px;
+		padding: 0px;
 	}
 	.clearfix::after {
 		content: '';
 		clear: both;
 		display: block;
 	}
-	li {
-		height: 60px;
-		width: 60px;
-		box-sizing: border-box;
+	.fd li {
+		width: 50px;
+		/*box-sizing: border-box;*/
 		border: 5px blue solid;
 		float: left;
 		margin-left: -5px;
@@ -33,25 +29,106 @@
 		z-index: 1;
 		position: relative;
 	}
-	li:hover {
+	.fd li:hover {
 		border: 5px solid red;
 		z-index: 6;
 	}
-		
+	/*行内块*/
+	.hn {
+		padding: 0px;
+		margin: 0px;
+		list-style: none;
+		width: 170px;
+		font-size: 0px;
+	}
+	.hn li {
+		display: inline-block;
+		border: 5px solid;
+		width: 50px;
+		height: 50px;
+		line-height: 50px;
+		text-align: center;
+		font-size: 16px;
+		margin: 0px 0px -5px -5px;
+	}
+	.hn li:hover {
+		border: red 5px solid;
+		z-index: 6;
+		position: relative;
+	}
+	/*表格*/
+	table {
+		border-collapse: collapse;
+	}
+	tr,
+	col {
+		border: 5px solid;
+	}
+	td {
+		width: 50px;
+		height: 50px;
+		text-align: center;
+		padding: 0px;
+	}
+	
+	td:hover {
+		border: 5px red solid;
+	}
+			
 </style>
 <body>
-<div>
-	<ul class="clearfix">
-		<li>1</li>
-		<li>2</li>
-		<li>3</li>
-		<li>4</li>
-		<li>5</li>
-		<li>6</li>
-		<li>7</li>
-		<li>8</li>
-		<li>9</li>
-	</ul>
-</div>
+	<div>
+		<p>浮动</p>
+		<ul class="fd clearfix">
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+			<li>5</li>
+			<li>6</li>
+			<li>7</li>
+			<li>8</li>
+			<li>9</li>
+		</ul>
+	</div>
+	<hr>
+	<div>
+		<p>行内</p>
+		<ul class="hn">
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+			<li>5</li>
+			<li>6</li>
+			<li>7</li>
+			<li>8</li>
+			<li>9</li>
+		</ul>
+	</div>
+	<hr>
+	<p>表格</p>
+	<table>
+		<tbody>
+			<col>
+			<col>
+			<col>
+			<tr>
+				<td>1</td>
+				<td>2</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>5</td>
+				<td>6</td>
+			</tr>
+			<tr>
+				<td>7</td>
+				<td>8</td>
+				<td>9</td>
+			</tr>
+		</tbody>
+	</table>
 </body>
 </html>

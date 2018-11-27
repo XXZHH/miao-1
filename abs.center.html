@@ -5,64 +5,63 @@
   <meta name="viewport" content="width=device-width">
   <title>center</title>
   <style>
-  	/*水平垂直居中*/
-.a { /*定位*/
-	width: 300px;
-	height: 200px;
-	background: grey;
-	position: relative;
-	margin: auto;
-}
-.b {
-	width: 200px;
-	height: 100px;
-	line-height: 100px;
-	background: red;
-	position: absolute;
-	left: 0px;
-	right: 0px;
-	bottom: 0px;
-	top: 0px;
-	margin: auto;
-	font-size: 26px;
-	text-align: center;
-}
+	/*水平垂直居中*/
+	.a { /*定位*/
+		width: 300px;
+		height: 200px;
+		background: grey;
+		position: relative;
+	}
+	.b {
+		width: 200px;
+		height: 100px;
+		line-height: 100px;
+		background: red;
+		position: absolute;
+		left: 0px;
+		right: 0px;
+		bottom: 0px;
+		top: 0px;
+		margin: auto;
+		font-size: 26px;
+		text-align: center;
+	}
 
-.c { /*行内块*/
-	width: 300px;
-	line-height: 200px;
-	background: black;
-	margin: 50px auto;
-	font-size: 0px;
-	text-align: center;
-}
-.d {
-	width: 200px;
-	line-height: 100px;
-	background: white;
-	display: inline-block;
-	vertical-align: middle;
-	font-size: 26px;
-}
+	.c { /*行内块*/
+		width: 300px;
+		line-height: 200px;
+		background: black;
+		font-size: 0px;
+		text-align: center;
+	}
+	.d {
+		width: 200px;
+		line-height: 100px;
+		background: white;
+		display: inline-block;
+		vertical-align: middle;
+		font-size: 26px;
+	}
 
 
-table { /*表格*/
-	width: 300px;
-	margin: auto;
-	background: pink;
-	height: 200px;
-	vertical-align: middle;
-	margin-bottom: 50px;
-}
+	.e {
+		width: 300px;
+		height: 200px;
+		background: grey;
+		display: table-cell;
+		vertical-align: middle;
+		text-align: center;
+		margin-left: 500px;
+	}
 
-.f {
-	font-size: 26px;
-	text-align: center;
-	width: 200px;
-	margin: auto;
-	line-height: 100px;
-	background: aqua;
-}
+	.f {
+		display: inline-block;
+		width: 200px;
+		height: 100px;
+		background: pink;
+		line-height:100px;
+		font-size: 26px;
+	}
 
   </style>
 </head>
@@ -70,15 +69,13 @@ table { /*表格*/
 	<div class="a">
 		<div class="b">定位</div>
 	</div>
+	<hr>
 	<div class="c">
 		<div class="d">行内块</div>
 	</div>
-	<table>
-		<tr>
-			<td>
-				<div class="f">表格</div>
-			</td>
-		</tr>
-	</table>
+	<hr>
+	<div class="e">
+		<div class="f">表格</div>
+	</div>
 </body>
 </html>
