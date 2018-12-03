@@ -76,11 +76,10 @@
 			background-size: cover;
 			background-position: 54% 66%;
 		}
-		 .content-theme {
+		 .main-content .content-theme {
 			font-size: 280%;
 		}
 	}
-	
 /*	@media (max-height: 1050px){
 		.main{
 			height:600px; 
