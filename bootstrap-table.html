@@ -2,98 +2,140 @@
 <html>
 <head>
 	<title>bootstrap-table</title>
-<style>
-		* {
-		box-sizing: border-box;
-		text-align: center;
-	}	
-	div {
-		width: 1600px;
-		padding: 30px;
-		margin: auto;
-	}
-	.table {
-		border: none;
-		border-collapse: collapse;
-		width: 100%;
-		max-width: 100%;
-		background: #00000000;
-		margin-bottom: 35px;
-		color: #252129;
-	
-	}
-	.table thead th {
-		border-bottom: 4px solid #dee2e6;
-		border-top: 2px solid #dee2e6;
-	}
-	.table th,
-	.table td {
-		padding: 15px;
-		border-top: 2px solid #dee2e6;;
-	}
-	
-	.table-dark {
-		background: #212529;
-		color: #fff;
-	}
-	.table-dark thead th {
-		border-color: #32383e;
-	}
-	.table-dark th,
-	.table-dark td {
-		border-top: 2px solid #32383e;
-	}
-	.thead-dark {
-		background: #212529;
-		color: #fff;
-	}
-	.thead-light {
-		background: #e9ecef;
-		color:#495057;
-	}
-	.table-striped tbody tr:nth-child(2n+1) td{
-		background: #f2f2f2;
-	}
-	.table-striped  tbody tr:nth-child(2n+1) [scope=row] {
-		background: #f2f2f2;
-	}
-	.table-striped.table-dark tbody tr:nth-child(2n+1) td{
-		background: #2c3034;
-	}
-	.table-striped.table-dark tbody tr:nth-child(2n+1) [scope=row] {
-		background: #2c3034;
-	}
-	.table-bordered th,
-	.table-bordered td{
-		border: 2px solid #dee2e6;
-	}
-	.table-bordered.table-dark th,
-	.table-bordered.table-dark td{
-			border-color: #32383e;
-	}
-	.table-hover tbody tr:hover  {
-		background: #ececec;
-	}
-	.table-hover.table-dark tbody tr:hover  {
-		background: #323539;
-	} 
-	.table-sm tr,
-	.table-sm td{
-			padding: 0px;
-	}
-	.table caption {
-		caption-side: bottom;
-		text-align: left;
-	}
-	.table-active {
-		background: #dadada; 
-	}
-	.table-primary {
-		background: #b8daff;
-	}
-	.table-secondary {
-		background: #d6d8d8;
-	}
+  <style>
+    * {
+      box-sizing: border-box;
+      text-align: center;
+    } 
+    div {
+      width: 1600px;
+      padding: 30px;
+      margin: auto;
+    }
+    .table {
+      border: none;
+      border-collapse: collapse;
+      width: 100%;
+      max-width: 100%;
+      background: #00000000;
+      margin-bottom: 35px;
+      color: #252129;
+    
+    }
+    .table thead th {
+      border-bottom: 4px solid #dee2e6;
+      border-top: 2px solid #dee2e6;
+    }
+    .table th,
+    .table td {
+      padding: 15px;
+      border-top: 2px solid #dee2e6;;
+    }
+
+    .table-dark {
+      background: #212529;
+      color: #fff;
+    }
+    .table-dark thead th {
+      border-color: #32383e;
+    }
+    .table-dark th,
+    .table-dark td {
+      border-top: 2px solid #32383e;
+    }
+    .thead-dark {
+      background: #212529;
+      color: #fff;
+    }
+    .thead-light {
+      background: #e9ecef;
+      color:#495057;
+    }
+    .table-striped tbody tr:nth-child(2n+1) td{
+      background: #f2f2f2;
+    }
+    .table-striped  tbody tr:nth-child(2n+1) [scope=row] {
+      background: #f2f2f2;
+    }
+    .table-striped.table-dark tbody tr:nth-child(2n+1) td{
+      background: #2c3034;
+    }
+    .table-striped.table-dark tbody tr:nth-child(2n+1) [scope=row] {
+      background: #2c3034;
+    }
+    .table-bordered th,
+    .table-bordered td{
+      border: 2px solid #dee2e6;
+    }
+    .table-bordered.table-dark th,
+    .table-bordered.table-dark td{
+        border-color: #32383e;
+    }
+    .table-hover tbody tr:hover  {
+      background: #ececec;
+    }
+    .table-hover.table-dark tbody tr:hover  {
+      background: #323539;
+    } 
+    .table-sm tr,
+    .table-sm td{
+        padding: 0px;
+    }
+    .table caption {
+      caption-side: bottom;
+      text-align: left;
+    }
+    td.table-active,
+    tr.table-active {
+      background: #dadada; 
+    }
+    td.table-primary,
+    tr.table-primary {
+      background: #b8daff;
+    }
+    td.table-secondary,
+    tr.table-secondary {
+      background: #d6d8d8;
+    }
+    td.table-success,
+    tr.table-success {
+      background: #c3e6cb;
+    }
+    td.table-danger,
+    tr.table-danger {
+      background: #f5c6cb;
+    }
+    td.table-warning,
+    tr.table-warning {
+      background: #ffeeba;
+    }
+    td.table-info,
+    tr.table-info {
+      background: #bee5eb;
+    }
+    td.table-light,
+    tr.table-light {
+      background: #fdfdfe;
+    }
+    td.table-dark,
+    tr.table-dark {
+      background: #c6c8ca;
+    }
+    .bg-primary {
+      background: #007bff;
+    }
+    .bg-success {
+      background: #28a745;
+    }
+    .bg-warning {
+      background: #17a248;
+    }
+    .bg-danger {
+      background: #ffc107;
+    }
+    .bg-info {
+      background: #dc3545;
+    }
 </style>
 </head>
 <body>

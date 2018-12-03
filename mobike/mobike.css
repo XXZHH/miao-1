@@ -150,12 +150,16 @@
 		background: rgba(0,0,0,1)
 	}
 
+	.mb-pre {
+		overflow: hidden;
+	}
+	.mb-pre ul {
+		margin: 0px -1px;
+	}
 	.mb-pre ul li  span{
 		display: block;
-		
 		font-size: 24px;
 		font-weight: 400;
-		color: #fff;
 		width: 100px;
 		margin: auto;
 		margin-top: 50px;
